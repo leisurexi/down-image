@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="layui/layui.all.js"></script>
+</head>
+
+<body class="layui-layout-body">
+<form class="layui-form layui-container" action="" style="width: 500px; margin-top: 20px;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">图片类型</label>
+        <div class="layui-input-block">
+            <input type="text" name="type" required lay-verify="required" placeholder="请输入图片类型（png | jpg | jpeg | gif）"
+                   autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">图片长度</label>
+        <div class="layui-input-block">
+            <input type="text" name="long" required lay-verify="required" placeholder="请输入图片长度" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">图片宽度</label>
+        <div class="layui-input-block">
+            <input type="text" name="width" required lay-verify="required" placeholder="请输入图片宽度" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">图片大小</label>
+        <div class="layui-input-block">
+            <input type="text" name="size" required lay-verify="required" placeholder="请输入图片大小" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
+
