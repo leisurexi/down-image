@@ -45,6 +45,7 @@ $(() => {
         }
         if (images.length == 0) {
             layer.msg("您还没有选择图片");
+            return;
         }
         saveFile(images, () => {
             images = [];
