@@ -2,49 +2,117 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <head>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="layui/css/layui.css">
-    <script src="layui/layui.all.js"></script>
 </head>
 
-<body class="layui-layout-body">
-<form class="layui-form layui-container" action="" style="width: 500px; margin-top: 20px;">
-    <div class="layui-form-item">
-        <label class="layui-form-label">图片类型</label>
-        <div class="layui-input-block">
-            <input type="text" name="type" required lay-verify="required" placeholder="请输入图片类型（png | jpg | jpeg | gif）"
-                   autocomplete="off"
-                   class="layui-input">
+<body >
+<div class="layui-tab-content">
+    <div class="layui-tab-item layui-show">
+        <div>
+            <div>
+                <ul id="image-list" class="site-doc-icon site-doc-anim">
+                    <li>
+                        <div class="layui-anim">
+                            <div>
+                                <img width="150" height="150"
+                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
+                            </div>
+                            <div>
+                                <input type="text" value="1">
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-anim">
+                            <div>
+                                <img width="150" height="150"
+                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
+                            </div>
+                            <div>
+                                <input type="text" value="1">
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-anim">
+                            <div>
+                                <img width="150" height="150"
+                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
+                            </div>
+                            <div>
+                                <input type="text" value="1">
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-anim">
+                            <div>
+                                <img width="150" height="150"
+                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
+                            </div>
+                            <div>
+                                <input type="text" value="1">
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-anim">
+                            <div>
+                                <img width="150" height="150"
+                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
+                            </div>
+                            <div>
+                                <input type="text" value="1">
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-anim">
+                            <div>
+                                <img width="150" height="150"
+                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
+                            </div>
+                            <div>
+                                <input type="text" value="1">
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">图片长度</label>
-        <div class="layui-input-block">
-            <input type="text" name="long" required lay-verify="required" placeholder="请输入图片长度" autocomplete="off"
-                   class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">图片宽度</label>
-        <div class="layui-input-block">
-            <input type="text" name="width" required lay-verify="required" placeholder="请输入图片宽度" autocomplete="off"
-                   class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">图片大小</label>
-        <div class="layui-input-block">
-            <input type="text" name="size" required lay-verify="required" placeholder="请输入图片大小" autocomplete="off"
-                   class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <div class="layui-input-block">
-            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-        </div>
-    </div>
-</form>
 
+        <div>
+            <button id="confirm" class="layui-btn">确定</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="layui/layui.all.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jszip.min.js"></script>
+<script src="js/jszip-utils.min.js"></script>
+<script src="js/FileSaver.min.js"></script>
+<script src="js/choose-image.js"></script>
 </body>
 </html>
 

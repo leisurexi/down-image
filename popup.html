@@ -3,38 +3,52 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="layui/css/layui.css">
-    <script src="layui/layui.all.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jszip.min.js"></script>
-    <script src="js/jszip-utils.min.js"></script>
-    <script src="js/FileSaver.min.js"></script>
-    <script src="js/popup.js"></script>
 </head>
 
-<body>
-<!--<p>图片尺寸(px): <br>-->
-<!--    长: <input id="long" type="text"/>-->
-<!--    宽: <input id="width" type="text"/>-->
-<!--</p>-->
-<!--<p>图片类型(png|jpg|jpeg|gif): <input id="type" type="text"/></p>-->
-<!--&lt;!&ndash;<p>字节大小(只会下载小于或等于输入的字节大小的图片): <input id="size" type="text"/></p>&ndash;&gt;-->
-<!--<button type="button" class="layui-btn layui-btn-normal">确定</button>-->
-<!--<form class="layui-form" action="">-->
+<body class="layui-layout-body">
+<form id="choose-image" class="layui-form layui-container" action="" style="width: 500px; margin-top: 20px;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">图片类型</label>
+        <div class="layui-input-block">
+            <input type="text" name="type" placeholder="请输入图片类型（png | jpg | jpeg | gif）"
+                   autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
 <!--    <div class="layui-form-item">-->
-<!--        <label class="layui-form-label">图片类型</label>-->
+<!--        <label class="layui-form-label">图片长度</label>-->
 <!--        <div class="layui-input-block">-->
-<!--            <input type="text" name="title" required lay-verify="required" placeholder="请输入图片类型" autocomplete="off"-->
+<!--            <input type="text" name="long" placeholder="请输入图片长度" autocomplete="off"-->
 <!--                   class="layui-input">-->
 <!--        </div>-->
 <!--    </div>-->
-
 <!--    <div class="layui-form-item">-->
+<!--        <label class="layui-form-label">图片宽度</label>-->
 <!--        <div class="layui-input-block">-->
-<!--            <button class="layui-btn layui-btn-normal">确定</button>-->
+<!--            <input type="text" name="width" placeholder="请输入图片宽度" autocomplete="off"-->
+<!--                   class="layui-input">-->
 <!--        </div>-->
 <!--    </div>-->
-<!--</form>-->
-
+<!--    <div class="layui-form-item">-->
+<!--        <label class="layui-form-label">图片大小</label>-->
+<!--        <div class="layui-input-block">-->
+<!--            <input type="text" name="size" placeholder="请输入图片大小" autocomplete="off"-->
+<!--                   class="layui-input">-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+<script src="layui/layui.all.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jszip.min.js"></script>
+<script src="js/jszip-utils.min.js"></script>
+<script src="js/FileSaver.min.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
 

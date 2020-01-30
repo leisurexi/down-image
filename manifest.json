@@ -1,8 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a browser action with kittens.",
+  "name": "Download Images",
+  "description": "The download images extension.",
   "version": "1.0",
+  "options_page": "choose-image.html",
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
   "permissions": [
     "tabs",
     "storage",
@@ -22,10 +28,6 @@
         "https://*/*"
       ],
       "js": [
-        "js/jquery.min.js",
-        "js/jszip.min.js",
-        "js/jszip-utils.min.js",
-        "js/FileSaver.min.js",
         "js/content-script.js"
       ],
       "run_at": "document_end",
