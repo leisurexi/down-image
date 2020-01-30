@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2df6ae21-0c60-4f09-a23e-ed7b36db5ddb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/choose-image.html" beforeDir="false" afterPath="$PROJECT_DIR$/choose-image.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/choose-image.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/choose-image.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +83,7 @@
       <workItem from="1578752132995" duration="3168000" />
       <workItem from="1578808577533" duration="279000" />
       <workItem from="1579077522753" duration="4234000" />
+      <workItem from="1580390082663" duration="2906000" />
     </task>
     <task id="LOCAL-00001" summary="==&gt; 引入 layui">
       <created>1579081489333</created>
@@ -103,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579081730247</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="==&gt; 引入 layui">
+      <created>1580390130990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580390130990</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,10 +124,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="==&gt; 引入 layui" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="880" y="290" key="CommitChangelistDialog2" timestamp="1579081729761">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="578" y="236" key="CommitChangelistDialog2" timestamp="1580390130908">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="880" y="290" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1579081729761" />
+    <state x="578" y="236" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1580390130908" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1578640227038">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -126,10 +137,11 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="349" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1578751253983" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1579081731767">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="572" y="341" key="Vcs.Push.Dialog.v2" timestamp="1580390132723">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1579081731767" />
+    <state x="572" y="341" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1580390132723" />
     <state x="1072" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579081458113">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

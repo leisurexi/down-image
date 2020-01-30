@@ -20,7 +20,7 @@ $(() => {
             'src="' + imgArray[i] + '">\n' +
             '</div>\n' +
             '<div>\n' +
-            '<input id="name-' + i + '" type="text" value="' + (i + 1) + '">\n' +
+            '<input id="name-' + i + '" type="text" value="' + i + '">\n' +
             '</div>\n' +
             '<div>\n' +
             '<input type="checkbox" name="checkbox">\n' +
@@ -31,29 +31,38 @@ $(() => {
     $("#image-list").html(content);
 
     let images = new Array();
-    $("#confirm").click(e => {
+    $("#confirm").click(() => {
         let checkboxes = document.getElementsByName("checkbox");
         for (let i = 0; i < checkboxes.length; i++) {
-            if ($("#name-" + i + "").val().length < 1) {
+            let name = $("#name-" + i + "").val();
+            if (name.length < 1) {
                 layer.msg("确保所有图片都已经输入名称");
                 return;
             }
             if (checkboxes[i].checked) {
-                images.push(imgArray[i]);
+                images.push({"name": name, "src": imgArray[i]});
             }
         }
         if (images.length == 0) {
             layer.msg("您还没有选择图片");
         }
-        saveFile(images, (index, size) => {
-            if (index == size - 1) {
-                zip.generateAsync({type: "blob"}).then(function (blob) {
-                    saveAs(blob, "image.zip");
-                }, function (err) {
-                    alert(err);
-                });
-            }
+        saveFile(images, () => {
+            images = [];
         });
+    });
+
+    $("#check-all").click(() => {
+        let checkboxes = document.getElementsByName("checkbox");
+        for (let i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = true;
+        }
+    });
+
+    $("#cancel-check-all").click(() => {
+        let checkboxes = document.getElementsByName("checkbox");
+        for (let i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = false;
+        }
     });
 
 
@@ -75,22 +84,28 @@ function getImg(htmlStr) {
     return imgArr;
 }
 
-function urlToData(url, resolve) {
-    JSZipUtils.getBinaryContent(url, (err, data) => {
-        if (data) {
-            let index = url.lastIndexOf(".");
-            resolve(url.substring(index + 1, url.length), data);
-        } else {
-            alert(err);
-        }
-    });
-}
-
 function saveFile(imgArray, resolve) {
+    let images = new Array();
     for (let i = 0; i < imgArray.length; i++) {
-        urlToData(imgArray[i], (type, data) => {
-            zip.file(i + "." + type, data);
-            resolve(i, imgArray.length);
+        let url = imgArray[i].src;
+        JSZipUtils.getBinaryContent(url, (err, data) => {
+            if (data) {
+                let index = url.lastIndexOf(".");
+                images.push({"name": imgArray[i].name, "type": url.substring(index + 1, url.length), "data": data});
+            } else {
+                console.log(err);
+            }
+            if (images.length == imgArray.length) {
+                images.forEach(image => {
+                    zip.file(image.name + "." + image.type, image.data);
+                });
+                zip.generateAsync({type: "blob"}).then(function (blob) {
+                    saveAs(blob, "image.zip");
+                }, function (err) {
+                    console.log(err);
+                });
+                resolve();
+            }
         });
     }
 }

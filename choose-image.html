@@ -8,101 +8,104 @@
 
 <body >
 <div class="layui-tab-content">
-    <div class="layui-tab-item layui-show">
+    <div>
+        <button id="confirm" class="layui-btn">确认下载</button>
+        <button id="check-all" class="layui-btn layui-btn-primary">全选</button>
+        <button id="cancel-check-all" class="layui-btn layui-btn-primary">取消全选</button>
+    </div>
+    <div style="margin-top: 15px !important;" class="layui-tab-item layui-show">
         <div>
             <div>
                 <ul id="image-list" class="site-doc-icon site-doc-anim">
-                    <li>
-                        <div class="layui-anim">
-                            <div>
-                                <img width="150" height="150"
-                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
-                            </div>
-                            <div>
-                                <input type="text" value="1">
-                            </div>
-                            <div>
-                                <input type="checkbox">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="layui-anim">
-                            <div>
-                                <img width="150" height="150"
-                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
-                            </div>
-                            <div>
-                                <input type="text" value="1">
-                            </div>
-                            <div>
-                                <input type="checkbox">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="layui-anim">
-                            <div>
-                                <img width="150" height="150"
-                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
-                            </div>
-                            <div>
-                                <input type="text" value="1">
-                            </div>
-                            <div>
-                                <input type="checkbox">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="layui-anim">
-                            <div>
-                                <img width="150" height="150"
-                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
-                            </div>
-                            <div>
-                                <input type="text" value="1">
-                            </div>
-                            <div>
-                                <input type="checkbox">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="layui-anim">
-                            <div>
-                                <img width="150" height="150"
-                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
-                            </div>
-                            <div>
-                                <input type="text" value="1">
-                            </div>
-                            <div>
-                                <input type="checkbox">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="layui-anim">
-                            <div>
-                                <img width="150" height="150"
-                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">
-                            </div>
-                            <div>
-                                <input type="text" value="1">
-                            </div>
-                            <div>
-                                <input type="checkbox">
-                            </div>
-                        </div>
-                    </li>
+<!--                    <li>-->
+<!--                        <div class="layui-anim">-->
+<!--                            <div>-->
+<!--                                <img width="150" height="150"-->
+<!--                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="text" value="1">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="checkbox">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <div class="layui-anim">-->
+<!--                            <div>-->
+<!--                                <img width="150" height="150"-->
+<!--                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="text" value="1">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="checkbox">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <div class="layui-anim">-->
+<!--                            <div>-->
+<!--                                <img width="150" height="150"-->
+<!--                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="text" value="1">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="checkbox">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <div class="layui-anim">-->
+<!--                            <div>-->
+<!--                                <img width="150" height="150"-->
+<!--                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="text" value="1">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="checkbox">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <div class="layui-anim">-->
+<!--                            <div>-->
+<!--                                <img width="150" height="150"-->
+<!--                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="text" value="1">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="checkbox">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <div class="layui-anim">-->
+<!--                            <div>-->
+<!--                                <img width="150" height="150"-->
+<!--                                     src="https://static001.infoq.cn/resource/image/96/e8/9607a4e41b8334f91df2d3b3323104e8.jpg?x-oss-process=image/crop,w_1919,h_1096/resize,w_700,h_400">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="text" value="1">-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <input type="checkbox">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
                 </ul>
             </div>
         </div>
 
-        <div>
-            <button id="confirm" class="layui-btn">确定</button>
-        </div>
+
     </div>
 </div>
 
